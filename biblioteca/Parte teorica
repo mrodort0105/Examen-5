@@ -1,0 +1,47 @@
+Parte teórica 1. 
+Responde brevemente a las siguientes cuestiones: 
+
+2. ¿Por qué ItemBiblioteca se ha definido como clase abstracta? 
+
+Porque no puede ser instanciado por si mismo
+
+3. Explica por qué la relación entre Libro y Autor es composición y no herencia.
+
+Porque un libro tiene un autores, los libros no son autores por lo que la composición permite que un objeto contenga a otro como parte de su estado 
+
+4. Indica dos ventajas de usar encapsulación en las clases del ejercicio.
+
+Protección de datos = Hace que los datos no se modifiquen 
+Mantenibilidad = Se puede cambiar la implementación interna
+
+5. ¿Por qué ConfiguracionSistema podría declararse como final?
+
+Para evitar la herencia. Una clase que es final no puede extenderla ninguna otra clase
+ 
+6. ¿Qué ocurriría si el atributo contador de ContadorItems no fuera estático?
+Que no se podria modificar el resultado
+ 
+7. En qué situaciones es más adecuado utilizar herencia en lugar de composición.
+Cuando quieras usar unos datos relaciones con la propia clase
+ 
+8. ¿Qué métodos importantes heredan todas las clases de Object? Menciona al menos tres.
+tostring()
+equals(Object obj)
+hashcode
+
+9. Explica brevemente el polimorfismo y cómo aparece en este ejercicio.
+Es cuando un objeto es capaz de cambiar a diferentes cosas
+ 
+10. Observa el siguiente método:
+
+public static void modificarTitulo(String titulo) { 
+titulo = "Nuevo título"; 
+} 
+y la llamada: 
+String t = "Java"; 
+modificarTitulo(t); 
+System.out.println(t); 
+
+1. ¿Qué se imprimirá? 
+Imprima la palabra “java”
+2. Explica por qué ocurre esto en Java.
